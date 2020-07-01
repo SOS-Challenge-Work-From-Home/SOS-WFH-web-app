@@ -20,7 +20,11 @@
 
     <h1>Welcome to</h1>
 
-    <img src="" />
+    <picture>
+        <source media="(min-width: 465px)" srcset="file-small.jpg" />
+        <source media="(min-width: 650px)" srcset="file-medium.jpg" />
+        <img src="file.jpg" alt="" />
+    </picture>
 
     <hr style="background-color:#a9bfcc;border-width:thick;height:20px;color:mediumaquamarine;" />
 
@@ -31,10 +35,10 @@
 
         <label for="email-username">Email/Username:</label>
         <input type="text" name="email-username" value="" id="email-username" />
-        <br/>
+        <br />
         <label for="user-pw">Password:</label>
         <input type="password" id="user-pw" name="user-pw">
-        <br/>
+        <br />
         <div class="buttons">
             <div>
                 <button type="button">Sign Up</button>

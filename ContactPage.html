@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Page</title>
+</head>
+<body>
+    <h1>Get In Touch with Us!!</h1>
+
+    <form id="contact-form" name="contact-form">
+        <!--Required-->
+        <label for="email">Email/Username:</label>
+        <input type="text" name="email" value="" id="email" autocomplete="on" required/>
+        <br />
+
+        <!--Required-->
+        <label for="email-subject">Subject:</label>
+        <select id="email-subject" name="email-subject" required>
+            <option value="consult">Consultation Inquiry</option>
+            <option value="replacement">Replacement Parts</option>
+            <option value="installation">Installation Inquiry</option>
+            <option value="return-refund">Returns and Refunds</option>
+            <option value="account">Account Settings</option>
+            <option value="policy">Policy Inquiry</option>
+            <option value="misc">Other Topic</option>
+        </select>
+        <br />
+
+        <!--Required-->
+        <label for="message">Message:</label>
+        <textarea name="message" rows="10" cols="30" required>Type your message here!</textarea>
+        <br />
+
+        <!--Add an optional field to attach an image MAYBE?-->
+
+        <button type="submit" from="contact-form">Send</button> <!--needs to have a way to check validity-->
+    </form>
+</body>
+</html>
