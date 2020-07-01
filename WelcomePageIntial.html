@@ -3,22 +3,47 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="5" />
     <title>Welcome Screen</title>
+    <style>
+        h1, img {
+            text-align:center;
+        }
+        .buttons  div {
+            display: inline-block;
+            width:40%;
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
-    <form action="" method="post">
-        <h1>Login</h1>
 
-        <label for="email-username">Email/Username</label>
+    <h1>Welcome to</h1>
+
+    <img src="" />
+
+    <hr style="background-color:#a9bfcc;border-width:thick;height:20px;color:mediumaquamarine;" />
+
+
+    <form action="" method="post" id="Login-Form" style="border: 1px solid black;margin-left: auto;margin-right: auto;width: 25em;text-align:center;
+">
+        <h2>Login</h2>
+
+        <label for="email-username">Email/Username:</label>
         <input type="text" name="email-username" value="" id="email-username" />
-
+        <br/>
         <label for="user-pw">Password:</label>
         <input type="password" id="user-pw" name="user-pw">
-
-        <!--<label for="zipcode">How many patties would you like?</label>-->
-        <!--<input type="number" min="00000" max="99999" name="zipcode" id="zipcode">-->
-
-        <!--Just the basics-->
+        <br/>
+        <div class="buttons">
+            <div>
+                <button type="button">Sign Up</button>
+            </div>
+            <div>
+                <button type="button">Continue as a Guest</button>
+            </div>
+        </div>
+        <button type="submit" from="Login-Form">Submit</button> <!--Not sure if this is needed or if the enter key works-->
 
     </form>
 </body>
